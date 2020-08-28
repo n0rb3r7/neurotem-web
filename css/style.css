@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Verdana, Geneva", sans-serif;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+}
+
+header {
+  display: grid;
+  place-items: center;
+  background-color: rgb(24, 24, 24);
+  color: #fff;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+section {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+footer {
+  margin-top: auto;
+  background-color: #7ED3F6;
+  color: black;
+}
+
+.footer-copyright {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  width: 100%;
+  color: black;
+  background-color: #7ED3F6;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Arial, Helvetica" sans-serif!important;
+  font-weight: 600;
+}
+
+p {
+  line-height: 2rem;
+}
+
+/* menu icon and links color on sidenav */
+
+nav ul a, nav .brand-logo {
+  color: white;
+}
+
+/* navbar color */
+
+nav {
+  background-color: #80298F;
+}
+
+/* menu icon color on sidenav */
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+/* theme colors */
+.purple-text{
+  color: #80298F;
+}
+@media only screen and (max-width: 992px) {}
+
+@media only screen and (max-width: 600px) {}
