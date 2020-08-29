@@ -10,6 +10,7 @@ body {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   flex-direction: column;
+  background-color: #fff;
 }
 
 header {
@@ -30,9 +31,13 @@ section {
 }
 
 footer {
+  padding-top: 5vh;
   margin-top: auto;
   background-color: #7ED3F6;
   color: black;
+}
+footer a img{
+  padding-right: 10px;
 }
 
 .footer-copyright {
@@ -45,7 +50,7 @@ footer {
 
 h1, h2, h3, h4, h5 {
   font-family: "Arial, Helvetica" sans-serif!important;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 p {
@@ -67,12 +72,48 @@ nav {
 /* menu icon color on sidenav */
 
 .sidenav-trigger {
-  color: #26a69a;
+  color: #7ED3F6;
 }
 /* theme colors */
 .purple-text{
   color: #80298F;
 }
+.purple-bg{
+  background-color: #80298F;
+}
+.blue-bg{
+  background-color: #0C4BA0;
+}
+.light-blue-text{
+  color: #7ED3F6;
+}
+/* helpers */
+.full-width{
+  width: 100%;
+}
+.padding-title{
+  padding-bottom: 5vh;
+}
+
+/* forum section */
+.forum-padding{
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+/* monographies section */
+.card-image img{
+  height: 60px;
+}
+.light-blue-bar{
+  height: 40px;
+  background-color: #7ED3F6;
+}
 @media only screen and (max-width: 992px) {}
 
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+  /* forum section */
+.forum-padding{
+  padding-left: 0vw;
+  padding-right: 0vw;
+}
+}
