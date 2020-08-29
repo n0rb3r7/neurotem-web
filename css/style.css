@@ -36,7 +36,8 @@ footer {
   background-color: #7ED3F6;
   color: black;
 }
-footer a img{
+
+footer a img {
   padding-right: 10px;
 }
 
@@ -74,46 +75,75 @@ nav {
 .sidenav-trigger {
   color: #7ED3F6;
 }
+
 /* theme colors */
-.purple-text{
+
+.purple-text {
   color: #80298F;
 }
-.purple-bg{
+
+.purple-bg {
   background-color: #80298F;
 }
-.blue-bg{
+
+.blue-bg {
   background-color: #0C4BA0;
 }
-.light-blue-text{
+
+.light-blue-text {
   color: #7ED3F6;
 }
+
+.light-blue-bar {
+  height: 20px;
+  background-color: #7ED3F6;
+}
+
 /* helpers */
-.full-width{
+
+.full-width {
   width: 100%;
 }
-.padding-title{
+
+.padding-title {
   padding-bottom: 5vh;
 }
 
 /* forum section */
-.forum-padding{
+
+.forum-padding {
   padding-left: 10vw;
   padding-right: 10vw;
 }
+
 /* monographies section */
-.card-image img{
+
+.card-image img {
   height: 60px;
 }
-.light-blue-bar{
-  height: 40px;
-  background-color: #7ED3F6;
+
+/* notice section */
+
+#notice {
+  background-image: url("../images/neuronas-neurotem.jpg");
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+.notice {
+  color: #F7F7F7;
+  text-shadow: 3px 3px 3px black;
+}
+
 @media only screen and (max-width: 992px) {}
 
 @media only screen and (max-width: 600px) {
   /* forum section */
-.forum-padding{
-  padding-left: 0vw;
-  padding-right: 0vw;
-}
+  .forum-padding {
+    padding-left: 0vw;
+    padding-right: 0vw;
+  }
 }
