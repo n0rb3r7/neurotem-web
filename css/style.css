@@ -16,8 +16,8 @@ body {
 header {
   display: grid;
   place-items: center;
-  background-color: rgb(24, 24, 24);
-  color: #fff;
+  min-height: 70vh;
+  background-color: #7ED2F6;
 }
 
 main {
@@ -89,7 +89,12 @@ nav {
 .blue-bg {
   background-color: #0C4BA0;
 }
-
+.blue-text {
+  color: #0C4BA0!important;
+}
+.light-blue-bg {
+  background-color: #7ED3F6;
+}
 .light-blue-text {
   color: #7ED3F6;
 }
@@ -108,6 +113,23 @@ nav {
 .padding-title {
   padding-bottom: 5vh;
 }
+/* features section */
+.features{
+  font-size: 1.2rem;
+}
+/* notice section */
+.padding-ad{
+  padding: 1rem;
+}
+.child {
+  position: absolute;
+  top: -5vh;
+  right: 0;
+}
+
+.parent {
+  position: relative;
+}
 
 /* forum section */
 
@@ -125,7 +147,7 @@ nav {
 /* notice section */
 
 #notice {
-  background-image: url("../images/neuronas-neurotem.jpg");
+  background-image: url("../images/principal_kids.jpg");
   width: 100%;
   background-attachment: fixed;
   background-position: center;
