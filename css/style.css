@@ -1,23 +1,13 @@
 * {
   box-sizing: border-box;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Verdana, Geneva", sans-serif;
   min-height: 100vh;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  flex-direction: column;
   background-color: #fff;
-}
-
-header {
-  display: grid;
-  place-items: center;
-  min-height: 70vh;
-  background-color: #7ED2F6;
 }
 
 main {
@@ -26,8 +16,8 @@ main {
 }
 
 section {
-  padding-top: 5vh;
-  padding-bottom: 5vh;
+  padding-top: 6vh;
+  padding-bottom: 4vh;
 }
 
 footer {
@@ -39,6 +29,10 @@ footer {
 
 footer a img {
   padding-right: 10px;
+}
+
+footer a {
+  color: #80298F;
 }
 
 .footer-copyright {
@@ -58,16 +52,30 @@ p {
   line-height: 2rem;
 }
 
-/* menu icon and links color on sidenav */
+/* navbar */
 
-nav ul a, nav .brand-logo {
-  color: white;
+.menu-icon {
+  padding-right: 10px;
+  height: 25px;
 }
 
 /* navbar color */
 
 nav {
   background-color: #80298F;
+}
+
+nav.nav-center ul {
+  text-align: center;
+}
+
+nav.nav-center ul li {
+  display: inline;
+  float: none;
+}
+
+nav.nav-center ul li a {
+  display: inline-flex;
 }
 
 /* menu icon color on sidenav */
@@ -89,12 +97,15 @@ nav {
 .blue-bg {
   background-color: #0C4BA0;
 }
+
 .blue-text {
   color: #0C4BA0!important;
 }
+
 .light-blue-bg {
   background-color: #7ED3F6;
 }
+
 .light-blue-text {
   color: #7ED3F6;
 }
@@ -109,26 +120,44 @@ nav {
 .full-width {
   width: 100%;
 }
+.wine-row {
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  padding: 10px 0;
+}
+.wine-row img{
+  width: 30px!important;
+}
+.wine-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+}
+/* header section */
+
+#neurotem-video {
+  position: relative;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70vh;
+}
 
 .padding-title {
   padding-bottom: 5vh;
 }
+
 /* features section */
-.features{
-  font-size: 1.2rem;
-}
-/* notice section */
-.padding-ad{
-  padding: 1rem;
-}
-.child {
-  position: absolute;
-  top: -5vh;
-  right: 0;
+
+.features-img {
+  width: 350px;
 }
 
-.parent {
-  position: relative;
+.features {
+  font-size: 1.15rem;
 }
 
 /* forum section */
@@ -160,12 +189,83 @@ nav {
   text-shadow: 3px 3px 3px black;
 }
 
+#notice .child {
+  position: absolute;
+}
+
+#notice .valign-wrapper {
+  display: -webkit-flex!important;
+  display: -ms-flexbox!important;
+  display: flex!important;
+}
+
+.padding-ad {
+  padding: 1rem;
+}
+
+.child {
+  position: absolute;
+  top: -6vh;
+  right: 0;
+}
+
+.parent {
+  position: relative;
+}
+/* endorsement section */
+#endorsement .valign-wrapper {
+  display: -webkit-flex!important;
+  display: -ms-flexbox!important;
+  display: flex!important;
+}
+
+.card-image.img
+{
+  height:450px!important;
+}
+
+.material-icons.md1::before{
+  content:"search"; 
+}
+
+.material-icons.md1:hover::before{
+  content:"navigate_next"; 
+}
 @media only screen and (max-width: 992px) {}
 
 @media only screen and (max-width: 600px) {
+  /* header section */
+  #neurotem-video {
+    height: auto;
+  }
+  /* features setion */
+  .features-img {
+    width: 100%;
+  }
+  /* notice section */
+  #notice .child {
+    position: inherit;
+  }
+  #notice .valign-wrapper {
+    display: -webkit-inline-box!important;
+    display: -webkit-inline-box!important;
+    display: -ms-inline-grid!important;
+    display: inline!important;
+  }
+  /* endorsement section */
+  #endorsement .valign-wrapper {
+    display: -webkit-inline-box!important;
+    display: -webkit-inline-box!important;
+    display: -ms-inline-grid!important;
+    display: inline!important;
+  }
   /* forum section */
   .forum-padding {
     padding-left: 0vw;
     padding-right: 0vw;
+  }
+  /* footer section */
+  footer .right-align {
+    text-align: left;
   }
 }

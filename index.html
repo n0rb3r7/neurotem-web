@@ -1,60 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>neurotem | Temis Lostalo</title>
+  <title>Neurotem | Temis Lostalo</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link rel="stylesheet" href="vendor/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="vendor/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
 
 <body>
 
-  <nav class="" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Logo</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
+  <div class="navbar-fixed">
+    <nav class="nav-center">
+      <div class="nav-wrapper container-fluid">
+        <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons white-text">menu</i></a>
+        <ul class="hide-on-med-and-down center-align" style="width: 100%;">
+          <li><a class="valign-wrapper" href="#caracteristicas"><img src="images/icons/brain-light-blue.svg"
+                class="menu-icon" alt="">CARACTERÍSTICAS</a></li>
+          <li><a class="valign-wrapper" href="#presentacion"><img src="images/icons/slides.svg" class="menu-icon"
+                alt="">PRESENTACIONES</a></li>
+          <li><a class="valign-wrapper" href="#monografias"><img src="images/icons/file.svg" class="menu-icon"
+                alt="">MONOGRAFÍAS Y TRABAJOS CIENTÍFICOS</a></li>
+          <li><a class="valign-wrapper" href="#opiniones"><img src="images/icons/play.svg" class="menu-icon" alt="">FORO
+              DE
+              OPINIÓN</a></li>
+          <li><a class="valign-wrapper" href="#clients"><img src="images/icons/something.svg" class="menu-icon"
+                alt="">PROSPECTO</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <ul class="sidenav" id="mobile-menu">
+    <li><a href="#caracteristicas">CARACTERÍSTICAS</a></li>
+    <li><a href="#presentacion">PRESENTACIONES</a></li>
+    <li><a href="#monografias">MONOGRAFÍAS</a></li>
+    <li><a href="#opiniones">FORO DE OPINIÓN</a></li>
+    <li><a href="#clients">PROSPECTO</a></li>
+  </ul>
 
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
+
 
   <header>
-    <h1 class="hide">Neurotem</h1>
-    <img src="images/neurotem-title.png" alt="">
-    <img src="images/neurutoem-subtitle.png" alt="" style="width: 500px;">
+    <video id="neurotem-video" width="100%" autoplay muted poster="images/neutotem-header.jpg">
+      <source src="videos/Cabezal-Neurotem.webm" type="video/webm">
+      <source src="videos/Cabezal-Neurotem.ogv" type="video/ogg">
+      <source src="videos/Cabezal-Neurotem.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
   </header>
 
   <main>
     <!-- sección características -->
-    <section>
-      <div class="container">
+    <section id="caracteristicas">
+      <div class="container-fluid">
         <div class="row">
-          <div class="col s12 m4">
-            <img class="full-width" src="images/neurotem-package-b.png" alt="">
+          <div class="col s12 m4 center">
+            <img class="features-img" src="images/neurotem-package-b.png" alt="">
           </div>
           <div class="col s12 m4">
             <ul>
               <li><img src="images/icons/brain-purple.svg" alt="">
                 <p class="features grey-text text-darken-3">Modula los canales de Na en neuronas de
-                  respuesta rápida.2</p>
+                  respuesta rápida.<sup>2</sup></p>
               </li>
               <li><img src="images/icons/brain-blue.svg" alt="">
                 <p class="features grey-text text-darken-3">Con la eficacia de los derivados de las
-                  dibenzazepinas pero sin sus eventos adversos.1</p>
+                  dibenzazepinas pero sin sus eventos adversos.<sup>1</sup></p>
               </li>
               <li><img src="images/icons/brain-purple.svg" alt="">
                 <p class="features grey-text text-darken-3">Bien tolerada en comparación con las
-                  medicaciones clásicas.1</p>
+                  medicaciones clásicas.<sup>1</sup></p>
               </li>
             </ul>
           </div>
@@ -62,23 +84,26 @@
             <ul>
               <li>
                 <img src="images/icons/brain-purple.svg" alt="">
-                <p class="features grey-text text-darken-3">Mínimas interacciones fármaco-fármaco.1</p>
+                <p class="features grey-text text-darken-3">Mínimas interacciones fármaco-fármaco.<sup>1</sup></p>
               </li>
               <li><img src="images/icons/brain-blue.svg" alt="">
-                <p class="features grey-text text-darken-3">A diferencia de la Oxcarbazepina es una prodroga sólo de la S-Licarbazepina (Metabolito activo).1</p>
+                <p class="features grey-text text-darken-3">A diferencia de la Oxcarbazepina es una prodroga sólo de la
+                  S-Licarbazepina (Metabolito activo).<sup>1</sup></p>
               </li>
               <li><img src="images/icons/brain-purple.svg" alt="">
-                <p class="features grey-text text-darken-3">No tiene diferencias metabólicas entre adultos mayores y jóvenes.3</p>
+                <p class="features grey-text text-darken-3">No tiene diferencias metabólicas entre adultos mayores y
+                  jóvenes.<sup>3</sup></p>
+              </li>
+              <li><img src="images/icons/brain-blue.svg" alt="">
+                <p class="features grey-text text-darken-3">Baja incidencia de eventos adversos
+                  psiquiátricos.<sup>4</sup></p>
               </li>
             </ul>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- sección respaldo -->
-    <section>
-      <div class="container">
+      <!-- sección respaldo -->
+      <div id="endorsement" class="container">
         <div class="row">
           <div class="valign-wrapper">
             <div class="col s12 m3">
@@ -93,6 +118,9 @@
         </div>
       </div>
     </section>
+
+
+
 
     <!-- sección anuncio -->
     <section id="notice">
@@ -113,7 +141,7 @@
     </section>
 
     <!-- sección presentación -->
-    <section>
+    <section id="presentacion">
       <div class="container">
         <div class="row">
           <div class="col s12 m6">
@@ -128,7 +156,7 @@
 
     <!-- sección monografías y trabajos científicos -->
     <div class="light-blue-bar"></div>
-    <section class="blue-bg">
+    <section id="monografias" class="blue-bg">
       <div class="container">
         <h5 class="center-align white-text padding-title">MONOGRAFÍAS Y TRABAJOS CIENTÍFICOS</h5>
         <div class="row">
@@ -214,15 +242,125 @@
       </div>
     </section>
 
+
+
+
+
     <!-- sección foro de opinión -->
-    <section id="forum">
-      <div class="container-fluid forum-padding">
+    <section id="opiniones">
+      <div class="container">
         <h5 class="center-align light-blue-text padding-title">FORO DE OPINIÓN</h5>
+
+        <div class="owl-carousel owl-theme">
+          <div class="item-video" data-merge="3">
+            <div class="video-container">
+              <video width="100%" controls muted poster="images/neutotem-header.jpg">
+                <source src="videos/Cabezal-Neurotem.webm" type="video/webm">
+                <source src="videos/Cabezal-Neurotem.ogv" type="video/ogg">
+                <source src="videos/Cabezal-Neurotem.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div>
+              <div class="wine-row">
+                <img src="images/icons/cross.svg">
+                <div class="wine-text-container">
+                  <p class="flow-text light-blue-text">"Es muy efectivo"</p>
+                </div>
+              </div>
+              <p>Dr. Carlos Pérez 1</p>
+            </div>
+          </div>
+          <div class="item-video" data-merge="3">
+            <div class="video-container">
+              <video width="100%" controls muted poster="images/neutotem-header.jpg">
+                <source src="videos/Cabezal-Neurotem.webm" type="video/webm">
+                <source src="videos/Cabezal-Neurotem.ogv" type="video/ogg">
+                <source src="videos/Cabezal-Neurotem.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div>
+              <div class="wine-row">
+                <img src="images/icons/cross.svg">
+                <div class="wine-text-container">
+                  <p class="flow-text purple-text">"Es muy efectivo"</p>
+                </div>
+              </div>
+              <p>Dr. Carlos Pérez 2</p>
+            </div>
+          </div>
+          <div class="item-video" data-merge="3">
+            <div class="video-container">
+              <video width="100%" controls muted poster="images/neutotem-header.jpg">
+                <source src="videos/Cabezal-Neurotem.webm" type="video/webm">
+                <source src="videos/Cabezal-Neurotem.ogv" type="video/ogg">
+                <source src="videos/Cabezal-Neurotem.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div>
+              <div class="wine-row">
+                <img src="images/icons/cross.svg">
+                <div class="wine-text-container">
+                  <p class="flow-text light-blue-text">"Es muy efectivo"</p>
+                </div>
+              </div>
+              <p>Dr. Carlos Pérez 3</p>
+            </div>
+          </div>
+          <div class="item-video" data-merge="3">
+            <div class="video-container">
+              <video width="100%" controls muted poster="images/neutotem-header.jpg">
+                <source src="videos/Cabezal-Neurotem.webm" type="video/webm">
+                <source src="videos/Cabezal-Neurotem.ogv" type="video/ogg">
+                <source src="videos/Cabezal-Neurotem.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div>
+              <div class="wine-row">
+                <img src="images/icons/cross.svg">
+                <div class="wine-text-container">
+                  <p class="flow-text purple-text">"Es muy efectivo"</p>
+                </div>
+              </div>
+              <p>Dr. Carlos Pérez 4</p>
+            </div>
+          </div>
+          <div class="item-video" data-merge="3">
+            <div class="video-container">
+              <video width="100%" controls muted poster="images/neutotem-header.jpg">
+                <source src="videos/Cabezal-Neurotem.webm" type="video/webm">
+                <source src="videos/Cabezal-Neurotem.ogv" type="video/ogg">
+                <source src="videos/Cabezal-Neurotem.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div>
+              <div class="wine-row">
+                <img src="images/icons/cross.svg">
+                <div class="wine-text-container">
+                  <p class="flow-text light-blue-text">"Es muy efectivo"</p>
+                </div>
+              </div>
+              <p>Dr. Carlos Pérez 5</p>
+            </div>
+          </div>
+        </div>
+
+
+<!--
+
         <div class="row">
           <div class="col s12 m4">
             <div class="video-container">
-              <iframe width="853" height="480" src="//www.youtube.com/embed/Q8TXgCzxEnw?rel=0" frameborder="0"
-                allowfullscreen></iframe>
+              <video width="100%" autoplay muted poster="images/neutotem-header.jpg">
+                <source src="videos/Cabezal-Neurotem.webm" type="video/webm">
+                <source src="videos/Cabezal-Neurotem.ogv" type="video/ogg">
+                <source src="videos/Cabezal-Neurotem.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
             </div>
             <div class="valign-wrapper"><img style="padding-right: 20px;" src="images/icons/cross.svg" alt="">
               <p class="flow-text light-blue-text">"Es muy efectivo"</p>
@@ -231,18 +369,26 @@
           </div>
           <div class="col s12 m4">
             <div class="video-container">
-              <iframe width="853" height="480" src="//www.youtube.com/embed/Q8TXgCzxEnw?rel=0" frameborder="0"
-                allowfullscreen></iframe>
+              <video width="100%" autoplay muted poster="images/neutotem-header.jpg">
+                <source src="videos/Cabezal-Neurotem.webm" type="video/webm">
+                <source src="videos/Cabezal-Neurotem.ogv" type="video/ogg">
+                <source src="videos/Cabezal-Neurotem.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
             </div>
             <div class="valign-wrapper"><img style="padding-right: 20px;" src="images/icons/cross.svg" alt="">
-              <p class="flow-text light-blue-text">"Es muy efectivo"</p>
+              <p class="flow-text purple-text">"Es muy efectivo"</p>
             </div>
             <p>Dr. Carlos Pérez</p>
           </div>
           <div class="col s12 m4">
             <div class="video-container">
-              <iframe width="853" height="480" src="//www.youtube.com/embed/Q8TXgCzxEnw?rel=0" frameborder="0"
-                allowfullscreen></iframe>
+              <video width="100%" autoplay muted poster="images/neutotem-header.jpg">
+                <source src="videos/Cabezal-Neurotem.webm" type="video/webm">
+                <source src="videos/Cabezal-Neurotem.ogv" type="video/ogg">
+                <source src="videos/Cabezal-Neurotem.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
             </div>
             <div class="valign-wrapper"><img style="padding-right: 20px;" src="images/icons/cross.svg" alt="">
               <p class="flow-text light-blue-text">"Es muy efectivo"</p>
@@ -250,6 +396,9 @@
             <p>Dr. Carlos Pérez</p>
           </div>
         </div>
+
+-->
+
       </div>
     </section>
 
@@ -318,6 +467,7 @@
   <!--  Scripts-->
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/materialize.js"></script>
+  <script src="vendor/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
   <script src="js/init.js"></script>
 
 </body>
