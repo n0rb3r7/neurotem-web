@@ -14,7 +14,7 @@
       video:true,
       nav: true,
       navText: ["<i class='material-icons'>arrow_back</i>", "<i class='material-icons'>arrow_forward</i>"],
-      lazyLoad:true,
+      lazyLoad:false,
       responsive:{
           0:{
               items:1

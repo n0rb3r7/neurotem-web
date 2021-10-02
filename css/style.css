@@ -250,6 +250,13 @@ nav.nav-center ul li a {
 .material-icons.md1:hover::before{
   content:"navigate_next"; 
 }
+video::-webkit-media-controls {
+  visibility: hidden;
+}
+
+video::-webkit-media-controls-enclosure {
+  visibility: visible;
+}
 #opiniones .material-icons{
   font-size: 3rem;
 }
@@ -271,10 +278,28 @@ nav.nav-center ul li a {
 .padding-for-2-b{
   padding-right: 0px!important;
 }
+.lace{
+  position: absolute;
+  padding-top: 10px;
+  padding-left: 100px;
+  max-height: 220px;
+}
+.lace-sm{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-bottom: 50px;
+}
 @media screen and (max-width:1400px) {
   #opiniones .flow-text {
     font-size: 1rem
   }
+  .lace{
+  position: absolute;
+  padding-left: 68px;
+  max-height: 170px;
+}
 }
 
 @media only screen and (max-width: 600px) {
