@@ -1,567 +1,951 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Neurotem | Temis Lostalo</title>
+    <link rel="icon" type="image/x-icon" href="icon.ico" />
+    <meta
+      name="description"
+      content="Un nuevo concepto en el tratamiento de la epilepsia."
+    />
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="http://www.neurotem.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Neurotem | Temis Lostalo" />
+    <meta
+      property="og:description"
+      content="Un nuevo concepto en el tratamiento de la epilepsia."
+    />
+    <meta
+      property="og:image"
+      content="http://www.neurotem.com/images/neurotem-cover-og.jpg"
+    />
 
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Neurotem | Temis Lostalo</title>
-  <link rel="icon" type="image/x-icon" href="icon.ico" />
-  <meta name="description" content="Un nuevo concepto en el tratamiento de la epilepsia.">
-  <!-- Facebook Meta Tags -->
-  <meta property="og:url" content="http://www.neurotem.com">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Neurotem | Temis Lostalo">
-  <meta property="og:description" content="Un nuevo concepto en el tratamiento de la epilepsia.">
-  <meta property="og:image" content="http://www.neurotem.com/images/neurotem-cover-og.jpg">
+    <!-- Twitter Meta Tags -->
+    <meta property="twitter:url" content="http://www.neurotem.com" />
+    <meta
+      name="twitter:card"
+      content="http://www.neurotem.com/images/neurotem-cover-og.jpg"
+    />
+    <meta name="twitter:title" content="Neurotem | Temis Lostalo" />
+    <meta
+      name="twitter:description"
+      content="Un nuevo concepto en el tratamiento de la epilepsia."
+    />
+    <meta name="twitter:image" content="images/neurotem-cover-og.jpg" />
 
-  <!-- Twitter Meta Tags -->
-  <meta property="twitter:url" content="http://www.neurotem.com">
-  <meta name="twitter:card" content="http://www.neurotem.com/images/neurotem-cover-og.jpg">
-  <meta name="twitter:title" content="Neurotem | Temis Lostalo">
-  <meta name="twitter:description" content="Un nuevo concepto en el tratamiento de la epilepsia.">
-  <meta name="twitter:image" content="images/neurotem-cover-og.jpg">
+    <!-- CSS  -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="css/materialize.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
+    <link
+      rel="stylesheet"
+      href="vendor/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="vendor/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="vendor/venobox/venobox.css"
+      type="text/css"
+      media="screen"
+    />
+    <link
+      href="css/style.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
+  </head>
 
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <link rel="stylesheet" href="vendor/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="vendor/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
-  <link rel="stylesheet" href="vendor/venobox/venobox.css" type="text/css" media="screen" />
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-</head>
-
-<body>
-
-  <div class="navbar-fixed">
-    <nav class="nav-center">
-      <div class="nav-wrapper container-fluid">
-        <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons white-text">menu</i></a>
-        <ul class="hide-on-med-and-down center-align" style="width: 100%;">
-          <li><a class="valign-wrapper" href="#caracteristicas"><img src="images/icons/brain-light-blue.svg"
-                class="menu-icon" alt="">CARACTERÍSTICAS</a></li>
-          <li><a class="valign-wrapper" href="#presentacion"><img src="images/icons/slides.svg" class="menu-icon"
-                alt="">PRESENTACIONES</a></li>
-          <li><a class="valign-wrapper" href="#monografias"><img src="images/icons/file.svg" class="menu-icon"
-                alt="">MONOGRAFÍAS Y TRABAJOS CIENTÍFICOS</a></li>
-          <li><a class="valign-wrapper" href="#opiniones"><img src="images/icons/play.svg" class="menu-icon" alt="">FORO
-              DE
-              OPINIÓN</a></li>
-          <li><a class="valign-wrapper" href="pdf/Neurotem-Prospecto.pdf" target="_blank"><img
-                src="images/icons/something.svg" class="menu-icon" alt="">PROSPECTO</a></li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-  <ul class="sidenav" id="mobile-menu">
-    <li><a href="#caracteristicas">CARACTERÍSTICAS</a></li>
-    <li><a href="#presentacion">PRESENTACIONES</a></li>
-    <li><a href="#monografias">MONOGRAFÍAS</a></li>
-    <li><a href="#opiniones">FORO DE OPINIÓN</a></li>
-    <li><a href="pdf/Neurotem-Prospecto.pdf" target="_blank">PROSPECTO</a></li>
-  </ul>
-
-
-
-  <header>
-    <div class="hide-on-med-and-up show-on-small">
-      <img class="full-width" src="images/neurotem-header-mobile.jpg" alt="neurotem cabezal">
-    </div>
-    <video class="show-on-medium-and-up hide-on-small-only" id="neurotem-video" preload="auto" width="100%" muted
-      poster="images/neurotem-header-full.jpg">
-      <source src="videos/Cabezal-Neurotem.webm" type="video/webm">
-      <source src="videos/Cabezal-Neurotem.ogv" type="video/ogg">
-      <source src="videos/Cabezal-Neurotem.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-
-  </header>
-
-  <main>
-    <!-- sección características -->
-    <section id="caracteristicas">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col s12 m4 center videos">
-            <a class="venobox" data-vbtype="inline" title="Mecanismo de acción Neurotem" href="#inline"><img
-                id="thumbnail" class="features-img tooltipped" data-position="right"
-                data-tooltip="Mecanismo de acción Neurotem" src="images/neuroterm-400-800-action.jpg"
-                alt="mecanismo accion neurotem" /></a>
-
-            <div id="inline" style="display:none;">
-              <video preload="none" width="100%" autoplay controls muted poster="images/neurotem-header.jpg">
-                <source src="videos/Mecanismo_de_accion_Neurotem.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          </div>
-          <div class="col s12 m4">
-            <ul>
-              <li><img src="images/icons/brain-purple.svg" alt="">
-                <p class="features grey-text text-darken-3">Modula los canales de Na en neuronas de
-                  respuesta rápida.<sup>2</sup></p>
-              </li>
-              <li><img src="images/icons/brain-blue.svg" alt="">
-                <p class="features grey-text text-darken-3">Con la eficacia de los derivados de las
-                  Benzodiacepinas pero sin sus eventos adversos.<sup>1</sup></p>
-              </li>
-              <li><img src="images/icons/brain-purple.svg" alt="">
-                <p class="features grey-text text-darken-3">Bien tolerada en comparación con las
-                  medicaciones clásicas.<sup>1</sup></p>
-              </li>
-            </ul>
-          </div>
-          <div class="col s12 m4">
-            <ul>
-              <li>
-                <img src="images/icons/brain-purple.svg" alt="">
-                <p class="features grey-text text-darken-3">Mínimas interacciones fármaco-fármaco.<sup>1</sup></p>
-              </li>
-              <li><img src="images/icons/brain-blue.svg" alt="">
-                <p class="features grey-text text-darken-3">A diferencia de la Oxcarbazepina es una prodroga sólo de la
-                  S-Licarbazepina (Metabolito activo).<sup>1</sup></p>
-              </li>
-              <li><img src="images/icons/brain-purple.svg" alt="">
-                <p class="features grey-text text-darken-3">No tiene diferencias metabólicas entre adultos mayores y
-                  jóvenes.<sup>3</sup></p>
-              </li>
-              <li><img src="images/icons/brain-blue.svg" alt="">
-                <p class="features grey-text text-darken-3">Baja incidencia de eventos adversos
-                  psiquiátricos.<sup>4</sup></p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- sección referencias -->
-      <div id="references">
-        <div class="container">
-          <p>Referencias</p>
-          <ul>
-            <li class="grey-text">1. Zelano J, Ben-Menachem E. Eslicarbazepine acetate for the treatment of
-              partial epilepsy.
-              Expert Opin Pharmacother. 2016; 17 (8): 1165-9.</li>
-            <li class="grey-text">2. Gil-Nagel A, y cols. Efficacy and safety of eslicarbazepine acetate as
-              add-on treatment in
-              patients with focal-onset seizures: integrated analysis of pooled data from double-blind phase III
-              clinical studies. Epilepsia. 2013; 54 (1): 98-107.</li>
-            <li class="grey-text">3. Almeida L, Falcão A, Maia J, Mazur D, Gellert M, Soares-da-Silva P.
-              Single-dose and
-              steady-state pharmacokinetics of eslicarbazepine acetate (BIA 2-093) in healthy elderly and young
-              subjects. J Clin Pharmacol. 2005; 45 (9): 1062-6.</li>
-            <li class="grey-text">4. Villanueva V et al. J Neural 2017;264:22J2-48.</li>
+  <body>
+    <div class="navbar-fixed">
+      <nav class="nav-center">
+        <div class="nav-wrapper container-fluid">
+          <a href="#" data-target="mobile-menu" class="sidenav-trigger"
+            ><i class="material-icons white-text">menu</i></a
+          >
+          <ul class="hide-on-med-and-down center-align" style="width: 100%">
+            <li>
+              <a class="valign-wrapper" href="#caracteristicas"
+                ><img
+                  src="images/icons/brain-light-blue.svg"
+                  class="menu-icon"
+                  alt=""
+                />CARACTERÍSTICAS</a
+              >
+            </li>
+            <li>
+              <a class="valign-wrapper" href="#presentacion"
+                ><img
+                  src="images/icons/slides.svg"
+                  class="menu-icon"
+                  alt=""
+                />PRESENTACIONES</a
+              >
+            </li>
+            <li>
+              <a class="valign-wrapper" href="#monografias"
+                ><img
+                  src="images/icons/file.svg"
+                  class="menu-icon"
+                  alt=""
+                />MONOGRAFÍAS Y TRABAJOS CIENTÍFICOS</a
+              >
+            </li>
+            <li>
+              <a class="valign-wrapper" href="#opiniones"
+                ><img
+                  src="images/icons/play.svg"
+                  class="menu-icon"
+                  alt=""
+                />FORO DE OPINIÓN</a
+              >
+            </li>
+            <li>
+              <a
+                class="valign-wrapper"
+                href="pdf/Neurotem-Prospecto.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="images/icons/something.svg"
+                  class="menu-icon"
+                  alt=""
+                />PROSPECTO</a
+              >
+            </li>
           </ul>
         </div>
+      </nav>
+    </div>
+    <ul class="sidenav" id="mobile-menu">
+      <li><a href="#caracteristicas">CARACTERÍSTICAS</a></li>
+      <li><a href="#presentacion">PRESENTACIONES</a></li>
+      <li><a href="#monografias">MONOGRAFÍAS</a></li>
+      <li><a href="#opiniones">FORO DE OPINIÓN</a></li>
+      <li>
+        <a
+          href="pdf/Neurotem-Prospecto.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          >PROSPECTO</a
+        >
+      </li>
+    </ul>
+
+    <header>
+      <div class="hide-on-med-and-up show-on-small">
+        <img
+          class="full-width"
+          src="images/neurotem-header-mobile.jpg"
+          alt="neurotem cabezal"
+        />
       </div>
-      <!-- sección respaldo -->
-      <div id="endorsement" class="container" style="padding-top: 4vh;">
-        <div class="row">
-          <div class="valign-wrapper">
-            <div class="col s12 m3">
-              <img class="full-width" src="images/logos/endorsement-logos.png" alt="">
-            </div>
-            <div class="col s12 m9 padding-ad">
-              <h5 class="blue-text flow-text">Aprobado por EMA, FDA y ANMAT para su uso en monoterapia y terapia
-                adjunta.</h5>
-            </div>
-          </div>
+      <video
+        class="show-on-medium-and-up hide-on-small-only"
+        id="neurotem-video"
+        preload="auto"
+        width="100%"
+        muted
+        poster="images/neurotem-header-full.jpg"
+      >
+        <source src="videos/Cabezal-Neurotem.webm" type="video/webm" />
+        <source src="videos/Cabezal-Neurotem.ogv" type="video/ogg" />
+        <source src="videos/Cabezal-Neurotem.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </header>
 
-        </div>
-      </div>
-    </section>
+    <main>
+      <!-- sección características -->
+      <section id="caracteristicas">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col s12 m4 center videos">
+              <a
+                class="venobox"
+                data-vbtype="inline"
+                title="Mecanismo de acción Neurotem"
+                href="#inline"
+                ><img
+                  id="thumbnail"
+                  class="features-img tooltipped"
+                  data-position="right"
+                  data-tooltip="Mecanismo de acción Neurotem"
+                  src="images/neuroterm-400-800-action.jpg"
+                  alt="mecanismo accion neurotem"
+              /></a>
 
-
-    <!-- sección anuncio -->
-    <section id="notice">
-      <div class="container parent">
-        <div class="child light-blue-bg">
-          <h5 class="blue-text padding-ad"><b>¡ÚLTIMO MOMENTO!</b></h5>
-        </div>
-        <div class="row valign-wrapper">
-          <div class="col s12 m3">
-            <img class="notice-img full-width" src="images/globe.png" alt="">
-          </div>
-          <div class="col s12 m9">
-            <h4 class="notice">Ahora en Argentina, como en el resto
-              del mundo, APROBADO para uso pediátrico</h4>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- sección presentación -->
-    <section id="presentacion">
-      <div class="container">
-        <div class="row">
-          <div class="col s12 m6">
-            <img class="full-width" src="images/neuroterm-400-800.jpg" alt="">
-          </div>
-          <div class="col s12 m6">
-            <img class="full-width" src="images/neurotem-presentations.svg" alt="">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- sección monografías y trabajos científicos -->
-    <div class="light-blue-bar"></div>
-    <section id="monografias" class="blue-bg">
-      <div class="container">
-        <h5 class="center-align white-text padding-title">MONOGRAFÍAS Y TRABAJOS CIENTÍFICOS</h5>
-        <div class="row">
-          <div class="col s12 m4">
-            <div class="card horizontal blue-bg z-depth-0">
-              <div style="padding-top: 30px;" class="card-image">
-                <img src="images/icons/file-white.svg" alt="file icon">
-              </div>
-              <div class="card-stacked">
-                <div class="card-content white-text">
-                  <a class="flow-text" href="pdf/Neurotem Monografia de Producto.pdf" target="_blank">Monografía de
-                    Producto</a>
-                </div>
+              <div id="inline" style="display: none">
+                <video
+                  preload="none"
+                  width="100%"
+                  autoplay
+                  controls
+                  muted
+                  poster="images/neurotem-header.jpg"
+                >
+                  <source
+                    src="videos/Mecanismo_de_accion_Neurotem.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
               </div>
             </div>
-          </div>
-          <div class="col s12 m4">
-            <div class="card horizontal blue-bg z-depth-0">
-              <div style="padding-top: 30px;" class="card-image">
-                <img src="images/icons/file-white.svg" alt="file icon">
-              </div>
-              <div class="card-stacked">
-                <div class="card-content white-text">
-                  <a class="flow-text" href="pdf/Estudios Tratamiento de la Epilepsia Parcial Refractaria.pdf"
-                    target="_blank">Estudios: Tratamiento de la Epilepsia Parcial Refractaria</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m4">
-            <div class="card horizontal blue-bg z-depth-0">
-              <div style="padding-top: 30px;" class="card-image">
-                <img src="images/icons/file-white.svg" alt="file icon">
-              </div>
-              <div class="card-stacked">
-                <div class="card-content white-text">
-                  <a class="flow-text" href="pdf/Neurotem Presentacion.pdf" target="_blank">Presentación de Producto</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-
-
-    <!-- sección foro de opinión -->
-    <section id="opiniones">
-      <div class="container">
-        <h5 class="center-align light-blue-text padding-title">FORO DE OPINIÓN</h5>
-        <div class="row">
-          <div class="show-on-small hide-on-med-and-up">
-            <a href="https://drive.google.com/file/d/1VIAEO74jReLejN-OGuIBKJMFSBwdwS4J/view?usp=sharing" target="_blank"><img class="lace-sm" src="images/Neurotem LACE.jpg"
-                alt="neurotem-lace"></a>
-          </div>
-          <div class="col s12 m4 offset-m2 padding-for-2-a">
-            <div class="video-container">
-              <video width="100%" controls muted poster="images/posters/Dr. Santiago Galicchio.jpg">
-                <source src="videos/Dr.SantiagoGalicchio.webm" type="video/webm">
-                <source src="videos/Dr. Santiago Galicchio.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div>
-              <div class="wine-row">
-                <img src="images/icons/cross.svg" alt="icono cruz">
-                <div class="wine-text-container">
-                  <p class="flow-text purple-text">Presentación</p>
-                </div>
-              </div>
-              <p>Dr. Santiago Galicchio</p>
-            </div>
-          </div>
-          <div class="col s12 m4 padding-for-2-b">
-            <div class="video-container">
-              <video width="100%" controls muted poster="images/posters/Dr. Damian Consalvo.jpg">
-                <source src="videos/Dr.DamianConsalvo.webm" type="video/webm">
-                <source src="videos/Dr. Damian Consalvo.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div>
-              <div class="wine-row">
-                <img src="images/icons/cross.svg" alt="icono cruz">
-                <div class="wine-text-container">
-                  <p class="flow-text light-blue-text">Presentación</p>
-                </div>
-              </div>
-              <p>Dr. Damián Consalvo</p>
-            </div>
-
-          </div>
-          <div class="hide-on-small-only"><a href="https://drive.google.com/file/d/1VIAEO74jReLejN-OGuIBKJMFSBwdwS4J/view?usp=sharing" target="_blank"><img class="lace"
-                src="images/Neurotem LACE.jpg" alt="neurotem-lace"></a></div>
-        </div>
-        <div class="owl-carousel owl-theme">
-
-          <div class="item-video" data-merge="3">
-            <div class="video-container">
-              <video width="100%" controls muted poster="images/posters/Eficacia demostrada.jpg">
-                <source src="videos/Eficaciademostrada.webm" type="video/webm">
-                <source src="videos/Eficacia demostrada.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div>
-              <div class="wine-row">
-                <img src="images/icons/cross.svg" alt="icono cruz">
-                <div class="wine-text-container">
-                  <p class="flow-text light-blue-text">Eficacia demostrada</p>
-                </div>
-              </div>
-              <p>Dr. Damián Consalvo</p>
-            </div>
-          </div>
-
-
-
-          <div class="item-video" data-merge="3">
-            <div class="video-container">
-              <video width="100%" controls muted poster="images/posters/Aprobada para su uso en pediatria.jpg">
-                <source src="videos/Aprobadaparasuusoenpediatria.webm" type="video/webm">
-                <source src="videos/Aprobada para su uso en pediatria.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div>
-              <div class="wine-row">
-                <img src="images/icons/cross.svg" alt="icono cruz">
-                <div class="wine-text-container">
-                  <p class="flow-text purple-text">Aprobada para su uso en pediatría</p>
-                </div>
-              </div>
-              <p>Dr. Santiago Galicchio</p>
-            </div>
-          </div>
-
-          <div class="item-video" data-merge="3">
-            <div class="video-container">
-              <video width="100%" controls muted poster="images/posters/Aprobaciones.jpg">
-                <source src="videos/Aprobaciones.webm" type="video/webm">
-                <source src="videos/Aprobaciones.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div>
-              <div class="wine-row">
-                <img src="images/icons/cross.svg" alt="icono cruz">
-                <div class="wine-text-container">
-                  <p class="flow-text light-blue-text">Aprobaciones</p>
-                </div>
-              </div>
-              <p>Dr. Damián Consalvo</p>
-            </div>
-          </div>
-
-          <div class="item-video" data-merge="3">
-            <div class="video-container">
-              <video width="100%" controls muted poster="images/posters/Eficacia y seguridad demostrada.jpg">
-                <source src="videos/Eficaciayseguridaddemostrada.webm" type="video/webm">
-                <source src="videos/Eficacia y seguridad demostrada.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div>
-              <div class="wine-row">
-                <img src="images/icons/cross.svg" alt="icono cruz">
-                <div class="wine-text-container">
-                  <p class="flow-text purple-text">Eficacia y seguridad demostrada</p>
-                </div>
-              </div>
-              <p>Dr. Santiago Galicchio</p>
-            </div>
-          </div>
-
-          <div class="item-video" data-merge="3">
-            <div class="video-container">
-              <video width="100%" controls muted
-                poster="images/posters/Eficacia demostrada para su uso en Monoterapia.jpg">
-                <source src="videos/EficaciademostradaparasuusoenMonoterapia.webm" type="video/webm">
-                <source src="videos/Eficacia demostrada para su uso en Monoterapia.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div>
-              <div class="wine-row">
-                <img src="images/icons/cross.svg" alt="icono cruz">
-                <div class="wine-text-container">
-                  <p class="flow-text light-blue-text">Eficacia demostrada para su uso en monoterapia</p>
-                </div>
-              </div>
-              <p>Dr. Damián Consalvo</p>
-            </div>
-          </div>
-
-          <div class="item-video" data-merge="3">
-            <div class="video-container">
-              <video width="100%" controls muted poster="images/posters/Efecto sobre las funciones neurocognitivas.jpg">
-                <source src="videos/Efectosobrelasfuncionesneurocognitivas.webm" type="video/webm">
-                <source src="videos/Efecto sobre las funciones neurocognitivas.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div>
-              <div class="wine-row">
-                <img src="images/icons/cross.svg" alt="icono cruz">
-                <div class="wine-text-container">
-                  <p class="flow-text purple-text">Efecto sobre las funciones neurocognitivas</p>
-                </div>
-              </div>
-              <p>Dr. Santiago Galicchio</p>
-            </div>
-          </div>
-
-          <div class="item-video" data-merge="3">
-            <div class="video-container">
-              <video width="100%" controls muted poster="images/posters/Probada para terapia adicional.jpg">
-                <source src="videos/Probadaparaterapiaadicional.webm" type="video/webm">
-                <source src="videos/Probada para terapia adicional.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div>
-              <div class="wine-row">
-                <img src="images/icons/cross.svg" alt="icono cruz">
-                <div class="wine-text-container">
-                  <p class="flow-text light-blue-text">Probada para terapia adicional</p>
-                </div>
-              </div>
-              <p>Dr. Damián Consalvo</p>
-            </div>
-          </div>
-
-          <div class="item-video" data-merge="3">
-            <div class="video-container">
-              <video width="100%" controls muted poster="images/posters/Propiedades farmacocineticas.jpg">
-                <source src="videos/Propiedadesfarmacocineticas.webm" type="video/webm">
-                <source src="videos/Propiedades farmacocineticas.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div>
-              <div class="wine-row">
-                <img src="images/icons/cross.svg" alt="icono cruz">
-                <div class="wine-text-container">
-                  <p class="flow-text purple-text">Propiedades farmacocinéticas</p>
-                </div>
-              </div>
-              <p>Dr. Santiago Galicchio</p>
-            </div>
-          </div>
-
-          <div class="item-video" data-merge="3">
-            <div class="video-container">
-              <video width="100%" controls muted poster="images/posters/Ventajas de una molecula moderna.jpg">
-                <source src="videos/Ventajasdeunamoleculamoderna.webm" type="video/webm">
-                <source src="videos/Ventajas de una molecula moderna.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div>
-              <div class="wine-row">
-                <img src="images/icons/cross.svg" alt="icono cruz">
-                <div class="wine-text-container">
-                  <p class="flow-text light-blue-text">Ventajas de una molécula moderna</p>
-                </div>
-              </div>
-              <p>Dr. Damián Consalvo</p>
-            </div>
-          </div>
-
-          <div class="item-video" data-merge="3">
-            <div class="video-container">
-              <video width="100%" controls muted poster="images/posters/Interacciones farmacologicas.jpg">
-                <source src="videos/Interaccionesfarmacologicas.webm" type="video/webm">
-                <source src="videos/Interacciones farmacologicas.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div>
-              <div class="wine-row">
-                <img src="images/icons/cross.svg" alt="icono cruz">
-                <div class="wine-text-container">
-                  <p class="flow-text purple-text">Interacciones farmacológicas</p>
-                </div>
-              </div>
-              <p>Dr. Santiago Galicchio</p>
-            </div>
-          </div>
-
-          <div class="item-video" data-merge="3">
-            <div class="video-container">
-              <video width="100%" controls muted
-                poster="images/posters/Nuevos farmacos para el tratamiento de la epilepsia.jpg">
-                <source src="videos/Nuevosfarmacosparaeltratamientodelaepilepsia.webm" type="video/webm">
-                <source src="videos/Nuevos farmacos para el tratamiento de la epilepsia.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div>
-              <div class="wine-row">
-                <img src="images/icons/cross.svg" alt="icono cruz">
-                <div class="wine-text-container">
-                  <p class="flow-text light-blue-text">Nuevos fármacos para el tratamiento de la epilepsia</p>
-                </div>
-              </div>
-              <p>Dr. Damián Consalvo</p>
-            </div>
-          </div>
-
-          <div class="item-video" data-merge="3">
-            <div class="video-container">
-              <video width="100%" controls muted poster="images/posters/Principales ventajas.jpg">
-                <source src="videos/Principalesventajas.webm" type="video/webm">
-                <source src="videos/Principales ventajas.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div>
-              <div class="wine-row">
-                <img src="images/icons/cross.svg" alt="icono cruz">
-                <div class="wine-text-container">
-                  <p class="flow-text purple-text">Principales ventajas </p>
-                </div>
-              </div>
-              <p>Dr. Santiago Galicchio</p>
-            </div>
-          </div>
-
-          <div class="item-video" data-merge="3">
-            <div class="video-container">
-              <video width="100%" controls muted
-                poster="images/posters/Nuevas moleculas ventajas en las interacciones farmacologicas.jpg">
-                <source src="videos/Nuevasmoleculasventajasenlasinteraccionesfarmacologicas.webm" type="video/webm">
-                <source src="videos/Nuevas moleculas ventajas en las interacciones farmacologicas.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div>
-              <div class="wine-row">
-                <img src="images/icons/cross.svg" alt="icono cruz">
-                <div class="wine-text-container">
-                  <p class="flow-text light-blue-text">Nuevas moléculas: ventajas en las interacciones farmacológicas
+            <div class="col s12 m4">
+              <ul>
+                <li>
+                  <img src="images/icons/brain-purple.svg" alt="" />
+                  <p class="features grey-text text-darken-3">
+                    Modula los canales de Na en neuronas de respuesta
+                    rápida.<sup>2</sup>
                   </p>
+                </li>
+                <li>
+                  <img src="images/icons/brain-blue.svg" alt="" />
+                  <p class="features grey-text text-darken-3">
+                    Con la eficacia de los derivados de las Benzodiacepinas pero
+                    sin sus eventos adversos.<sup>1</sup>
+                  </p>
+                </li>
+                <li>
+                  <img src="images/icons/brain-purple.svg" alt="" />
+                  <p class="features grey-text text-darken-3">
+                    Bien tolerada en comparación con las medicaciones
+                    clásicas.<sup>1</sup>
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="col s12 m4">
+              <ul>
+                <li>
+                  <img src="images/icons/brain-purple.svg" alt="" />
+                  <p class="features grey-text text-darken-3">
+                    Mínimas interacciones fármaco-fármaco.<sup>1</sup>
+                  </p>
+                </li>
+                <li>
+                  <img src="images/icons/brain-blue.svg" alt="" />
+                  <p class="features grey-text text-darken-3">
+                    A diferencia de la Oxcarbazepina es una prodroga sólo de la
+                    S-Licarbazepina (Metabolito activo).<sup>1</sup>
+                  </p>
+                </li>
+                <li>
+                  <img src="images/icons/brain-purple.svg" alt="" />
+                  <p class="features grey-text text-darken-3">
+                    No tiene diferencias metabólicas entre adultos mayores y
+                    jóvenes.<sup>3</sup>
+                  </p>
+                </li>
+                <li>
+                  <img src="images/icons/brain-blue.svg" alt="" />
+                  <p class="features grey-text text-darken-3">
+                    Baja incidencia de eventos adversos psiquiátricos.<sup
+                      >4</sup
+                    >
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- sección referencias -->
+        <div id="references">
+          <div class="container">
+            <p>Referencias</p>
+            <ul>
+              <li class="grey-text">
+                1. Zelano J, Ben-Menachem E. Eslicarbazepine acetate for the
+                treatment of partial epilepsy. Expert Opin Pharmacother. 2016;
+                17 (8): 1165-9.
+              </li>
+              <li class="grey-text">
+                2. Gil-Nagel A, y cols. Efficacy and safety of eslicarbazepine
+                acetate as add-on treatment in patients with focal-onset
+                seizures: integrated analysis of pooled data from double-blind
+                phase III clinical studies. Epilepsia. 2013; 54 (1): 98-107.
+              </li>
+              <li class="grey-text">
+                3. Almeida L, Falcão A, Maia J, Mazur D, Gellert M,
+                Soares-da-Silva P. Single-dose and steady-state pharmacokinetics
+                of eslicarbazepine acetate (BIA 2-093) in healthy elderly and
+                young subjects. J Clin Pharmacol. 2005; 45 (9): 1062-6.
+              </li>
+              <li class="grey-text">
+                4. Villanueva V et al. J Neural 2017;264:22J2-48.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- sección respaldo -->
+        <div id="endorsement" class="container" style="padding-top: 4vh">
+          <div class="row">
+            <div class="valign-wrapper">
+              <div class="col s12 m3">
+                <img
+                  class="full-width"
+                  src="images/logos/endorsement-logos.png"
+                  alt=""
+                />
+              </div>
+              <div class="col s12 m9 padding-ad">
+                <h5 class="blue-text flow-text">
+                  Aprobado por EMA, FDA y ANMAT para su uso en monoterapia y
+                  terapia adjunta.
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- sección anuncio -->
+      <section id="notice">
+        <div class="container parent">
+          <div class="child light-blue-bg">
+            <h5 class="blue-text padding-ad"><b>¡ÚLTIMO MOMENTO!</b></h5>
+          </div>
+          <div class="row valign-wrapper">
+            <div class="col s12 m3">
+              <img
+                class="notice-img full-width"
+                src="images/globe.png"
+                alt=""
+              />
+            </div>
+            <div class="col s12 m9">
+              <h4 class="notice">
+                Ahora en Argentina, como en el resto del mundo, APROBADO para
+                uso pediátrico
+              </h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- sección presentación -->
+      <section id="presentacion">
+        <div class="container">
+          <div class="row">
+            <div class="col s12 m6">
+              <img
+                class="full-width"
+                src="images/neuroterm-400-800.jpg"
+                alt=""
+              />
+            </div>
+            <div class="col s12 m6">
+              <img
+                class="full-width"
+                src="images/neurotem-presentations.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- sección monografías y trabajos científicos -->
+      <div class="light-blue-bar"></div>
+      <section id="monografias" class="blue-bg">
+        <div class="container">
+          <h5 class="center-align white-text padding-title">
+            MONOGRAFÍAS Y TRABAJOS CIENTÍFICOS
+          </h5>
+          <div class="row">
+            <div class="col s12 m4">
+              <div class="card horizontal blue-bg z-depth-0">
+                <div style="padding-top: 30px" class="card-image">
+                  <img src="images/icons/file-white.svg" alt="file icon" />
+                </div>
+                <div class="card-stacked">
+                  <div class="card-content white-text">
+                    <a
+                      class="flow-text"
+                      href="pdf/Neurotem Monografia de Producto.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Monografía de Producto</a
+                    >
+                  </div>
                 </div>
               </div>
-              <p>Dr. Damián Consalvo</p>
+            </div>
+            <div class="col s12 m4">
+              <div class="card horizontal blue-bg z-depth-0">
+                <div style="padding-top: 30px" class="card-image">
+                  <img src="images/icons/file-white.svg" alt="file icon" />
+                </div>
+                <div class="card-stacked">
+                  <div class="card-content white-text">
+                    <a
+                      class="flow-text"
+                      href="pdf/Estudios Tratamiento de la Epilepsia Parcial Refractaria.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Estudios: Tratamiento de la Epilepsia Parcial
+                      Refractaria</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m4">
+              <div class="card horizontal blue-bg z-depth-0">
+                <div style="padding-top: 30px" class="card-image">
+                  <img src="images/icons/file-white.svg" alt="file icon" />
+                </div>
+                <div class="card-stacked">
+                  <div class="card-content white-text">
+                    <a
+                      class="flow-text"
+                      href="pdf/Neurotem Presentacion.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Presentación de Producto</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- sección foro de opinión -->
+      <section id="opiniones">
+        <div class="container">
+          <h5 class="center-align light-blue-text padding-title">
+            FORO DE OPINIÓN
+          </h5>
+          <div class="row">
+            <div class="show-on-small hide-on-med-and-up">
+              <a
+                href="https://imsva91-ctp.trendmicro.com/wis/clicktime/v1/query?url=https%3a%2f%2fwww.youtube.com%2fwatch%3fv%3d57s37jco5QM&umid=79B5743F-CC82-5B05-8B83-8FEB642B7B22&auth=86771de6716cf3d3264edc2ce02b2a42bdef9470-373483112ca7ed7e2141f4973806b2c3caf08b83"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  class="lace-sm"
+                  src="images/Neurotem LACE2.jpg"
+                  alt="neurotem-lace"
+              /></a>
+            </div>
+            <div class="show-on-small hide-on-med-and-up">
+              <a
+                href="https://drive.google.com/file/d/1VIAEO74jReLejN-OGuIBKJMFSBwdwS4J/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  class="lace-sm"
+                  src="images/Neurotem LACE.jpg"
+                  alt="neurotem-lace"
+              /></a>
+            </div>
+
+            <div class="hide-on-small-only">
+              <a
+                href="https://imsva91-ctp.trendmicro.com/wis/clicktime/v1/query?url=https%3a%2f%2fwww.youtube.com%2fwatch%3fv%3d57s37jco5QM&umid=79B5743F-CC82-5B05-8B83-8FEB642B7B22&auth=86771de6716cf3d3264edc2ce02b2a42bdef9470-373483112ca7ed7e2141f4973806b2c3caf08b83"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  class="lace2"
+                  src="images/Neurotem LACE2.jpg"
+                  alt="neurotem-lace"
+              /></a>
+            </div>
+            <div class="col s12 m4 offset-m2 padding-for-2-a">
+              <div class="video-container">
+                <video
+                  width="100%"
+                  controls
+                  muted
+                  poster="images/posters/Dr. Santiago Galicchio.jpg"
+                >
+                  <source
+                    src="videos/Dr.SantiagoGalicchio.webm"
+                    type="video/webm"
+                  />
+                  <source
+                    src="videos/Dr. Santiago Galicchio.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div>
+                <div class="wine-row">
+                  <img src="images/icons/cross.svg" alt="icono cruz" />
+                  <div class="wine-text-container">
+                    <p class="flow-text purple-text">Presentación</p>
+                  </div>
+                </div>
+                <p>Dr. Santiago Galicchio</p>
+              </div>
+            </div>
+
+            <div class="col s12 m4 padding-for-2-b">
+              <div class="video-container">
+                <video
+                  width="100%"
+                  controls
+                  muted
+                  poster="images/posters/Dr. Damian Consalvo.jpg"
+                >
+                  <source
+                    src="videos/Dr.DamianConsalvo.webm"
+                    type="video/webm"
+                  />
+                  <source
+                    src="videos/Dr. Damian Consalvo.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div>
+                <div class="wine-row">
+                  <img src="images/icons/cross.svg" alt="icono cruz" />
+                  <div class="wine-text-container">
+                    <p class="flow-text light-blue-text">Presentación</p>
+                  </div>
+                </div>
+                <p>Dr. Damián Consalvo</p>
+              </div>
+            </div>
+            <div class="hide-on-small-only">
+              <a
+                href="https://drive.google.com/file/d/1VIAEO74jReLejN-OGuIBKJMFSBwdwS4J/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  class="lace"
+                  src="images/Neurotem LACE.jpg"
+                  alt="neurotem-lace"
+              /></a>
+            </div>
+          </div>
+          <div class="owl-carousel owl-theme">
+            <div class="item-video" data-merge="3">
+              <div class="video-container">
+                <video
+                  width="100%"
+                  controls
+                  muted
+                  poster="images/posters/Eficacia demostrada.jpg"
+                >
+                  <source
+                    src="videos/Eficaciademostrada.webm"
+                    type="video/webm"
+                  />
+                  <source
+                    src="videos/Eficacia demostrada.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div>
+                <div class="wine-row">
+                  <img src="images/icons/cross.svg" alt="icono cruz" />
+                  <div class="wine-text-container">
+                    <p class="flow-text light-blue-text">Eficacia demostrada</p>
+                  </div>
+                </div>
+                <p>Dr. Damián Consalvo</p>
+              </div>
+            </div>
+
+            <div class="item-video" data-merge="3">
+              <div class="video-container">
+                <video
+                  width="100%"
+                  controls
+                  muted
+                  poster="images/posters/Aprobada para su uso en pediatria.jpg"
+                >
+                  <source
+                    src="videos/Aprobadaparasuusoenpediatria.webm"
+                    type="video/webm"
+                  />
+                  <source
+                    src="videos/Aprobada para su uso en pediatria.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div>
+                <div class="wine-row">
+                  <img src="images/icons/cross.svg" alt="icono cruz" />
+                  <div class="wine-text-container">
+                    <p class="flow-text purple-text">
+                      Aprobada para su uso en pediatría
+                    </p>
+                  </div>
+                </div>
+                <p>Dr. Santiago Galicchio</p>
+              </div>
+            </div>
+
+            <div class="item-video" data-merge="3">
+              <div class="video-container">
+                <video
+                  width="100%"
+                  controls
+                  muted
+                  poster="images/posters/Aprobaciones.jpg"
+                >
+                  <source src="videos/Aprobaciones.webm" type="video/webm" />
+                  <source src="videos/Aprobaciones.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div>
+                <div class="wine-row">
+                  <img src="images/icons/cross.svg" alt="icono cruz" />
+                  <div class="wine-text-container">
+                    <p class="flow-text light-blue-text">Aprobaciones</p>
+                  </div>
+                </div>
+                <p>Dr. Damián Consalvo</p>
+              </div>
+            </div>
+
+            <div class="item-video" data-merge="3">
+              <div class="video-container">
+                <video
+                  width="100%"
+                  controls
+                  muted
+                  poster="images/posters/Eficacia y seguridad demostrada.jpg"
+                >
+                  <source
+                    src="videos/Eficaciayseguridaddemostrada.webm"
+                    type="video/webm"
+                  />
+                  <source
+                    src="videos/Eficacia y seguridad demostrada.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div>
+                <div class="wine-row">
+                  <img src="images/icons/cross.svg" alt="icono cruz" />
+                  <div class="wine-text-container">
+                    <p class="flow-text purple-text">
+                      Eficacia y seguridad demostrada
+                    </p>
+                  </div>
+                </div>
+                <p>Dr. Santiago Galicchio</p>
+              </div>
+            </div>
+
+            <div class="item-video" data-merge="3">
+              <div class="video-container">
+                <video
+                  width="100%"
+                  controls
+                  muted
+                  poster="images/posters/Eficacia demostrada para su uso en Monoterapia.jpg"
+                >
+                  <source
+                    src="videos/EficaciademostradaparasuusoenMonoterapia.webm"
+                    type="video/webm"
+                  />
+                  <source
+                    src="videos/Eficacia demostrada para su uso en Monoterapia.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div>
+                <div class="wine-row">
+                  <img src="images/icons/cross.svg" alt="icono cruz" />
+                  <div class="wine-text-container">
+                    <p class="flow-text light-blue-text">
+                      Eficacia demostrada para su uso en monoterapia
+                    </p>
+                  </div>
+                </div>
+                <p>Dr. Damián Consalvo</p>
+              </div>
+            </div>
+
+            <div class="item-video" data-merge="3">
+              <div class="video-container">
+                <video
+                  width="100%"
+                  controls
+                  muted
+                  poster="images/posters/Efecto sobre las funciones neurocognitivas.jpg"
+                >
+                  <source
+                    src="videos/Efectosobrelasfuncionesneurocognitivas.webm"
+                    type="video/webm"
+                  />
+                  <source
+                    src="videos/Efecto sobre las funciones neurocognitivas.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div>
+                <div class="wine-row">
+                  <img src="images/icons/cross.svg" alt="icono cruz" />
+                  <div class="wine-text-container">
+                    <p class="flow-text purple-text">
+                      Efecto sobre las funciones neurocognitivas
+                    </p>
+                  </div>
+                </div>
+                <p>Dr. Santiago Galicchio</p>
+              </div>
+            </div>
+
+            <div class="item-video" data-merge="3">
+              <div class="video-container">
+                <video
+                  width="100%"
+                  controls
+                  muted
+                  poster="images/posters/Probada para terapia adicional.jpg"
+                >
+                  <source
+                    src="videos/Probadaparaterapiaadicional.webm"
+                    type="video/webm"
+                  />
+                  <source
+                    src="videos/Probada para terapia adicional.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div>
+                <div class="wine-row">
+                  <img src="images/icons/cross.svg" alt="icono cruz" />
+                  <div class="wine-text-container">
+                    <p class="flow-text light-blue-text">
+                      Probada para terapia adicional
+                    </p>
+                  </div>
+                </div>
+                <p>Dr. Damián Consalvo</p>
+              </div>
+            </div>
+
+            <div class="item-video" data-merge="3">
+              <div class="video-container">
+                <video
+                  width="100%"
+                  controls
+                  muted
+                  poster="images/posters/Propiedades farmacocineticas.jpg"
+                >
+                  <source
+                    src="videos/Propiedadesfarmacocineticas.webm"
+                    type="video/webm"
+                  />
+                  <source
+                    src="videos/Propiedades farmacocineticas.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div>
+                <div class="wine-row">
+                  <img src="images/icons/cross.svg" alt="icono cruz" />
+                  <div class="wine-text-container">
+                    <p class="flow-text purple-text">
+                      Propiedades farmacocinéticas
+                    </p>
+                  </div>
+                </div>
+                <p>Dr. Santiago Galicchio</p>
+              </div>
+            </div>
+
+            <div class="item-video" data-merge="3">
+              <div class="video-container">
+                <video
+                  width="100%"
+                  controls
+                  muted
+                  poster="images/posters/Ventajas de una molecula moderna.jpg"
+                >
+                  <source
+                    src="videos/Ventajasdeunamoleculamoderna.webm"
+                    type="video/webm"
+                  />
+                  <source
+                    src="videos/Ventajas de una molecula moderna.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div>
+                <div class="wine-row">
+                  <img src="images/icons/cross.svg" alt="icono cruz" />
+                  <div class="wine-text-container">
+                    <p class="flow-text light-blue-text">
+                      Ventajas de una molécula moderna
+                    </p>
+                  </div>
+                </div>
+                <p>Dr. Damián Consalvo</p>
+              </div>
+            </div>
+
+            <div class="item-video" data-merge="3">
+              <div class="video-container">
+                <video
+                  width="100%"
+                  controls
+                  muted
+                  poster="images/posters/Interacciones farmacologicas.jpg"
+                >
+                  <source
+                    src="videos/Interaccionesfarmacologicas.webm"
+                    type="video/webm"
+                  />
+                  <source
+                    src="videos/Interacciones farmacologicas.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div>
+                <div class="wine-row">
+                  <img src="images/icons/cross.svg" alt="icono cruz" />
+                  <div class="wine-text-container">
+                    <p class="flow-text purple-text">
+                      Interacciones farmacológicas
+                    </p>
+                  </div>
+                </div>
+                <p>Dr. Santiago Galicchio</p>
+              </div>
+            </div>
+
+            <div class="item-video" data-merge="3">
+              <div class="video-container">
+                <video
+                  width="100%"
+                  controls
+                  muted
+                  poster="images/posters/Nuevos farmacos para el tratamiento de la epilepsia.jpg"
+                >
+                  <source
+                    src="videos/Nuevosfarmacosparaeltratamientodelaepilepsia.webm"
+                    type="video/webm"
+                  />
+                  <source
+                    src="videos/Nuevos farmacos para el tratamiento de la epilepsia.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div>
+                <div class="wine-row">
+                  <img src="images/icons/cross.svg" alt="icono cruz" />
+                  <div class="wine-text-container">
+                    <p class="flow-text light-blue-text">
+                      Nuevos fármacos para el tratamiento de la epilepsia
+                    </p>
+                  </div>
+                </div>
+                <p>Dr. Damián Consalvo</p>
+              </div>
+            </div>
+
+            <div class="item-video" data-merge="3">
+              <div class="video-container">
+                <video
+                  width="100%"
+                  controls
+                  muted
+                  poster="images/posters/Principales ventajas.jpg"
+                >
+                  <source
+                    src="videos/Principalesventajas.webm"
+                    type="video/webm"
+                  />
+                  <source
+                    src="videos/Principales ventajas.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div>
+                <div class="wine-row">
+                  <img src="images/icons/cross.svg" alt="icono cruz" />
+                  <div class="wine-text-container">
+                    <p class="flow-text purple-text">Principales ventajas</p>
+                  </div>
+                </div>
+                <p>Dr. Santiago Galicchio</p>
+              </div>
+            </div>
+
+            <div class="item-video" data-merge="3">
+              <div class="video-container">
+                <video
+                  width="100%"
+                  controls
+                  muted
+                  poster="images/posters/Nuevas moleculas ventajas en las interacciones farmacologicas.jpg"
+                >
+                  <source
+                    src="videos/Nuevasmoleculasventajasenlasinteraccionesfarmacologicas.webm"
+                    type="video/webm"
+                  />
+                  <source
+                    src="videos/Nuevas moleculas ventajas en las interacciones farmacologicas.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div>
+                <div class="wine-row">
+                  <img src="images/icons/cross.svg" alt="icono cruz" />
+                  <div class="wine-text-container">
+                    <p class="flow-text light-blue-text">
+                      Nuevas moléculas: ventajas en las interacciones
+                      farmacológicas
+                    </p>
+                  </div>
+                </div>
+                <p>Dr. Damián Consalvo</p>
+              </div>
             </div>
           </div>
 
-        </div>
-
-
-        <!--
+          <!--
 
         <div class="row">
           <div class="col s12 m4">
@@ -609,71 +993,90 @@
         </div>
 
 -->
-
-      </div>
-    </section>
-
-
-  </main>
-
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col l10 s12">
-          <h5 class="purple-text">Contacto</h5>
-          <ul>
-            <li class="valign-wrapper"><a class="white-text" href="tel:0800-321-5555"><img src="images/icons/phone.svg"
-                  alt=""></a>
-              0800-321-5555</li>
-            <li class="valign-wrapper"><a class="white-text" href="mailto:info@temislostalo.com.ar"><img
-                  src="images/icons/envelope.svg" alt=""></a>
-              info@temislostalo.com.ar</li>
-            <li class="valign-wrapper"><a class="white-text" href="https://goo.gl/maps/WZy33Y2uRAvJpDKVA"><img
-                  src="images/icons/location.svg" alt=""></a>
-              Zepita 3178 - C1285ABF, Ciudad de Buenos Aires. Argentina</li>
-          </ul>
         </div>
-        <div class="col l2 s12">
-          <img class="full-width smaller_on_mobile" src="images/logos/temis-lostalo.svg" alt="temis lostalo logo">
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
+      </section>
+    </main>
+
+    <footer>
       <div class="container">
         <div class="row">
-          <div class="col s12 m6">
-            Copyright 2020 - <a href="https://www.temislostalo.com.ar" target="_blank">www.temislostalo.com.ar</a> -
-            Todos los derechos
-            reservados
+          <div class="col l10 s12">
+            <h5 class="purple-text">Contacto</h5>
+            <ul>
+              <li class="valign-wrapper">
+                <a class="white-text" href="tel:0800-321-5555"
+                  ><img src="images/icons/phone.svg" alt=""
+                /></a>
+                0800-321-5555
+              </li>
+              <li class="valign-wrapper">
+                <a class="white-text" href="mailto:info@temislostalo.com.ar"
+                  ><img src="images/icons/envelope.svg" alt=""
+                /></a>
+                info@temislostalo.com.ar
+              </li>
+              <li class="valign-wrapper">
+                <a
+                  class="white-text"
+                  href="https://goo.gl/maps/WZy33Y2uRAvJpDKVA"
+                  ><img src="images/icons/location.svg" alt=""
+                /></a>
+                Zepita 3178 - C1285ABF, Ciudad de Buenos Aires. Argentina
+              </li>
+            </ul>
           </div>
-          <div class="col s12 m6 right-align">
-            <a href="https://www.temislostalo.com.ar/portal/legales" target="_blank">Legales</a> - <a
-              href="https://www.buenosaires.gob.ar/defensaconsumidor" target="_blank">Dirección General de Defensa y
-              Protección al
-              Consumidor</a>
+          <div class="col l2 s12">
+            <img
+              class="full-width smaller_on_mobile"
+              src="images/logos/temis-lostalo.svg"
+              alt="temis lostalo logo"
+            />
           </div>
         </div>
-
       </div>
-    </div>
-  </footer>
+      <div class="footer-copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col s12 m6">
+              Copyright 2020 -
+              <a
+                href="https://www.temislostalo.com.ar"
+                target="_blank"
+                rel="noopener noreferrer"
+                >www.temislostalo.com.ar</a
+              >
+              - Todos los derechos reservados
+            </div>
+            <div class="col s12 m6 right-align">
+              <a
+                href="https://www.temislostalo.com.ar/portal/legales"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Legales</a
+              >
+              -
+              <a
+                href="https://www.buenosaires.gob.ar/defensaconsumidor"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Dirección General de Defensa y Protección al Consumidor</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-
-
-  <!--  Scripts-->
-  <script src="js/jquery-3.5.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="vendor/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
-  <script type="text/javascript" src="vendor/venobox/venobox.js"></script>
-  <script src="js/init.js"></script>
-  <script type="text/javascript">
-    setTimeout(function () {
-      document.getElementById("neurotem-video").play();
-
-    }, 2000)
-
-  </script>
-
-</body>
-
+    <!--  Scripts-->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="vendor/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="vendor/venobox/venobox.js"></script>
+    <script src="js/init.js"></script>
+    <script type="text/javascript">
+      setTimeout(function () {
+        document.getElementById("neurotem-video").play();
+      }, 2000);
+    </script>
+  </body>
 </html>
