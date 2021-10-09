@@ -1003,7 +1003,7 @@
         <div class="container">
           <div class="row">
             <div class="col s12 m6">
-              Copyright 2020 -
+              Copyright <span id="year"></span> -
               <a href="https://www.temislostalo.com.ar" target="_blank"
                 >www.temislostalo.com.ar</a
               >
@@ -1037,6 +1037,7 @@
       setTimeout(function () {
         document.getElementById("neurotem-video").play();
       }, 2000);
+      document.getElementById("year").innerHTML = new Date().getFullYear();
     </script>
   </body>
 </html>
